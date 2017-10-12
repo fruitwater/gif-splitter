@@ -1,0 +1,6 @@
+# build フォルダは要らない
+build/
+# bin フォルダは要らない
+bin/
+# .settings フォルダは要らない
+.settings/
