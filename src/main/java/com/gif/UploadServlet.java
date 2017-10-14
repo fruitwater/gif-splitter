@@ -56,7 +56,7 @@ public class UploadServlet extends BaseServlet {
 		// ファイルを作成する
 		makeFile(properties, resp);
 		// 結果を表示するサーブレットにリダイレクトする
-		resp.sendRedirect(getServletContext().getContextPath()+"/result?id="+properties.get("id"));
+		resp.sendRedirect(getServletContext().getContextPath()+"/result?id="+properties.get("id")+"&delay="+properties.get("delay"));
 	}
 
 	// ユーザがアップロードしたファイルを取得する
@@ -70,12 +70,10 @@ public class UploadServlet extends BaseServlet {
 			List<FileItem> list = upload.parseRequest(req);
 			Iterator<FileItem> iterator = list.iterator();
 			if (!iterator.hasNext()) {
-				System.out.println("b");
 				return null;
 			}
 			return iterator.next();
 		} catch (FileUploadException e) {
-			System.out.println("a");
 			return null;
 		}
 	}
@@ -202,7 +200,6 @@ public class UploadServlet extends BaseServlet {
 				metadata = reader.getImageMetadata(i);
 			} catch (RuntimeException re) {
 				re.printStackTrace();
-				// throwErrorException(resp, "ファイルイメージの生成に失敗しました");
 			}
 
 			String[] imageatt = new String[] { "imageLeftPosition", "imageTopPosition", "imageWidth", "imageHeight" };

@@ -6,8 +6,8 @@
 <title>Gif Splitter Top　トップページ</title>
 </head>
 <body>
-	<h1>Play Gif Animation on Canvas</h1>
-	<p>gifアニメをcanvas上で再生します</p>
+	<h2>gifアニメをキャンバス上で再生します Play Gif Animation on Canvas</h2>
+	<h3>gifファイルをアップロードしてください Upload gif file</h3>
 	<form action="upload" method="post" enctype="multipart/form-data">
 		<p>
 			<input type="file" name="upload">
