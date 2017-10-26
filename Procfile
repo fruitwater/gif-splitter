@@ -1,2 +1,2 @@
-java $JAVA_OPTS -cp target/classes:target/dependency/* java.main.com.gif.TopServlet
+web: target/start -Dhttp.port=${PORT} ${JAVA_OPTS}
 
