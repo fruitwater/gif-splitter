@@ -1,2 +1,2 @@
-web: java -jar target/gif-splitter-1.0.jar
+web: java -cp target/classes/:target/dependency/* com.gif.TopServlet
 
