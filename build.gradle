@@ -16,7 +16,7 @@ apply from: 'https://raw.github.com/akhikhl/gretty/master/pluginScripts/gretty.p
 
 
 mainClassName = "com.gif.TopServlet"
-applicationName = o"app"
+applicationName = "app"
 
 // In this section you declare where to find the dependencies of your project
 repositories {
