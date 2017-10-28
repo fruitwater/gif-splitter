@@ -1,2 +1,1 @@
-web:    ./build/classes/java/main/com/gif
-
+web: ./build/install/app/bin/app
