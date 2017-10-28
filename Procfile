@@ -1,1 +1,2 @@
-web: java -cp $JAVA_OPTS target/libs/gradle-app01.war
+web: java --port $PORT target/libs/gradle-app01.war
+
