@@ -15,4 +15,8 @@ public class TopServlet extends BaseServlet{
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		fowardJsp(req, resp, "/WEB-INF/top.jsp");
 	}
+       
+        public static void main(String args[]){
+        }
 }
+
