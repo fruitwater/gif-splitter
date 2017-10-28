@@ -1,2 +1,1 @@
-
-va -cp $JAVA_OPTS target/classes/java/main/com/gif*
+web:java -cp $JAVA_OPTS target/classes/java/main/com/gif*
