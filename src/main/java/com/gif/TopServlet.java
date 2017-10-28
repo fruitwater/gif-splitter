@@ -26,7 +26,7 @@ public class TopServlet extends BaseServlet{
         ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
         context.setContextPath("/");
         server.setHandler(context);
-        context.addServlet(new ServletHolder(new Main()),"/*");
+        context.addServlet(new ServletHolder(new TopServlet()),"/*");
         server.start();
         server.join();        
 	}
