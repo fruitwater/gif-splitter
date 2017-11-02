@@ -1,6 +1,7 @@
 package com.gif;
 
 
+
 import java.io.IOException;
 
 import javax.servlet.ServletException;
@@ -29,14 +30,18 @@ public class TopServlet extends BaseServlet{
        
         public static void main(String args[]) throws Exception{
 System.out.println("hoge is hoge");
-
+try{
 	Server server = new Server(Integer.valueOf(System.getenv("PORT")));
         ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
         context.setContextPath("/");
         server.setHandler(context);
         context.addServlet(new ServletHolder(new TopServlet()),"/*");
         server.start();
-        server.join();        
+        server.join();
+}catch(Exception e){
+System.err.println("error");
+e.printStackTrace();
+}        
 	}
 
 }
