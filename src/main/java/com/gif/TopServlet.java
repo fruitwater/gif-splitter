@@ -22,6 +22,8 @@ public class TopServlet extends BaseServlet{
 	}
        
         public static void main(String args[]) throws Exception{
+System.out.println("hoge is hoge");
+
 	Server server = new Server(Integer.valueOf(System.getenv("PORT")));
         ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
         context.setContextPath("/");
