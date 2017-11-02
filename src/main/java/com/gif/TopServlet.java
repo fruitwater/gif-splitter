@@ -4,6 +4,7 @@ package com.gif;
 
 
 
+
 import java.io.IOException;
 
 import javax.servlet.ServletException;
@@ -23,8 +24,8 @@ public class TopServlet extends BaseServlet{
 	@Override
 	public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		try{	resp.getWriter().print("hello");
-	//	fowardJsp(req, resp, "/WEB-INF/top.jsp");
-		}catch(Exception e){
+		fowardJsp(req, resp, "/WEB-INF/top.jsp");
+		}catch(Throwable e){
 			System.out.println("[ERROR] 標準エラー出力：エラーが発生しました。");
 			e.printStackTrace(System.out);
 		}
