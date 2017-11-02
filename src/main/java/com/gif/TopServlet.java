@@ -1,11 +1,6 @@
 package com.gif;
 
 
-
-
-
-
-
 import java.io.IOException;
 
 import javax.servlet.ServletException;
@@ -39,7 +34,7 @@ try{
         ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
         context.setContextPath("/");
         server.setHandler(context);
-        context.addServlet(new ServletHolder(new TopServlet()),"/top");
+        context.addServlet(new ServletHolder(new TopServlet()),"/*");
         server.start();
         server.join();
 }catch(Exception e){
