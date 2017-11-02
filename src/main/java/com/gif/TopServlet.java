@@ -23,8 +23,8 @@ public class TopServlet extends BaseServlet{
 		try{	
 		fowardJsp(req, resp, "/WEB-INF/top.jsp");
 		}catch(Exception e){
-			System.err.println("[ERROR] 標準エラー出力：エラーが発生しました。");
-			e.printStackTrace();
+			System.out.println("[ERROR] 標準エラー出力：エラーが発生しました。");
+			e.printStackTrace(System.out);
 		}
 	}
        
@@ -39,8 +39,8 @@ try{
         server.start();
         server.join();
 }catch(Exception e){
-System.err.println("error");
-e.printStackTrace();
+System.out.println("error");
+e.printStackTrace(System.out);
 }        
 	}
 
