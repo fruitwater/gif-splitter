@@ -1,5 +1,6 @@
 package com.gif;
 
+
 import java.io.IOException;
 
 import javax.servlet.ServletException;
@@ -17,7 +18,7 @@ import org.eclipse.jetty.servlet.ServletHolder;
 public class TopServlet extends BaseServlet{
 
 	@Override
-	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+	public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		fowardJsp(req, resp, "/WEB-INF/top.jsp");
 	}
        
