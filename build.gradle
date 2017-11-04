@@ -40,7 +40,7 @@ dependencies {
     providedCompile 'javax.servlet:jstl:1.2'
     compile 'org.eclipse.jetty:jetty-server:9.2.5.v20141112'
     compile 'org.eclipse.jetty:jetty-webapp:9.2.5.v20141112' 
-  
+    compile 'org.eclipse.jetty:jetty-annotations:9.1.4.v20140401'  
 
 
 

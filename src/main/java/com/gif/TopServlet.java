@@ -1,6 +1,7 @@
 package com.gif;
 
 
+
 import java.io.IOException;
 
 import javax.servlet.ServletException;
@@ -21,7 +22,9 @@ public class TopServlet extends BaseServlet{
 	public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		try{
 		fowardJsp(req, resp, "/WEB-INF/top.jsp");
+		
 		}catch(Throwable e){
+
 			System.out.println("[ERROR] 標準エラー出力：エラーが発生しました。");
 			e.printStackTrace(System.out);
 		}
@@ -33,6 +36,7 @@ try{
 	Server server = new Server(Integer.valueOf(System.getenv("PORT")));
         ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
         context.setContextPath("/");
+	context.setResourseBase("src/main/webapp");
         server.setHandler(context);
         context.addServlet(new ServletHolder(new TopServlet()),"/*");
         server.start();
