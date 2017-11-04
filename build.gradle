@@ -41,7 +41,7 @@ dependencies {
     compile 'org.eclipse.jetty:jetty-server:9.2.5.v20141112'
     compile 'org.eclipse.jetty:jetty-webapp:9.2.5.v20141112' 
     compile 'org.eclipse.jetty:jetty-annotations:9.1.4.v20140401'  
-
+    compile 'com.github.jsimone:webapp-runner:8.5.11.3'
 
 
     // Declare the dependency for your favourite test framework you want to use in your tests.
@@ -50,7 +50,21 @@ dependencies {
     // 'test.useTestNG()' to your build script.
     testCompile 'junit:junit:4.12'
 }
-task stage (dependsOn : ['clean', 'installDist'])
+//task stage (dependsOn : ['clean', 'installDist'])
+
+task stage() {
+    dependsOn clean, war
+}
+war.mustRunAfter clean
+
+task copyToLib(type: Copy) {
+    into "$buildDir/server"
+    from(configurations.compile) {
+        include "webapp-runner*"
+    }
+}
+
+stage.dependsOn(copyToLib)
 
 
 task wrapper(type: Wrapper) {
