@@ -36,7 +36,7 @@ try{
 	Server server = new Server(Integer.valueOf(System.getenv("PORT")));
         ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
         context.setContextPath("/");
-	context.setResourseBase("src/main/webapp");
+	context.setResourceBase("src/main/webapp");
         server.setHandler(context);
         context.addServlet(new ServletHolder(new TopServlet()),"/*");
         server.start();
