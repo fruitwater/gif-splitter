@@ -2,6 +2,7 @@ package com.gif;
 
 
 
+
 import java.io.IOException;
 
 import javax.servlet.ServletException;
@@ -29,7 +30,8 @@ public class TopServlet extends BaseServlet{
 			e.printStackTrace(System.out);
 		}
 	}
-       
+
+/*       
         public static void main(String args[]) throws Exception{
 System.out.println("hoge is hoge");
 try{
@@ -46,6 +48,6 @@ System.out.println("error");
 e.printStackTrace(System.out);
 }        
 	}
-
+*/
 }
 
