@@ -20,4 +20,8 @@
         <servlet-name>serv</servlet-name>
         <url-pattern>/serv</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>result</servlet-name>
+        <url-pattern>/result</url-pattern>
+    </servlet-mapping>
 </web-app>
