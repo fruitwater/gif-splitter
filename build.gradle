@@ -37,6 +37,7 @@ dependencies {
     compile 'commons-fileupload:commons-fileupload:1.3.1'
     compile 'commons-io:commons-io:2.5'
     providedCompile 'javax.servlet:jstl:1.2'
+    compile 'taglibs:standard:1.1.2'
 
 //    compile 'org.eclipse.jetty:jetty-server:9.2.5.v20141112'
 //   compile 'org.eclipse.jetty:jetty-webapp:9.2.5.v20141112' 
