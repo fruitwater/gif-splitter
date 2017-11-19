@@ -12,6 +12,10 @@
         <servlet-name>serv</servlet-name>
         <servlet-class>com.gif.TopServlet</servlet-class>
     </servlet>
+    <servlet>
+      	<servlet-name>result</servlet-name>
+     	<servlet-class>com.gif.ResultServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>serv</servlet-name>
         <url-pattern>/serv</url-pattern>
