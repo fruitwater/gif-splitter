@@ -13,7 +13,7 @@
         <servlet-class>com.gif.TopServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>sev</servlet-name>
+        <servlet-name>serv</servlet-name>
         <url-pattern>/serv</url-pattern>
     </servlet-mapping>
 </web-app>
