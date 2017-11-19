@@ -43,7 +43,7 @@
 				stage.update();
 				timer();
 				console.log(index);
-			},delay);
+			},delay*10);
 		}
 		
 		timer();
