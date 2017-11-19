@@ -13,7 +13,7 @@
         <servlet-class>com.gif.TopServlet</servlet-class>
     </servlet>
     <servlet>
-      	<servlet-name>result</servlet-name>
+      	<servlet-name>res</servlet-name>
      	<servlet-class>com.gif.ResultServlet</servlet-class>
     </servlet>
     <servlet-mapping>
@@ -21,7 +21,7 @@
         <url-pattern>/serv</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>result</servlet-name>
-        <url-pattern>/result</url-pattern>
+        <servlet-name>res</servlet-name>
+        <url-pattern>/res</url-pattern>
     </servlet-mapping>
 </web-app>
