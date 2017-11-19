@@ -4,6 +4,10 @@ JavaScriptを使ったゲームやアニメーションの素材にgif画像を�
 バックエンドはJavaサーブレットを使っています。<br>
 フロントエンドはadobe社のCREATEJSを使用しています。<br>
 <br>
+実行サーブレット<br>
+https://rocky-sands-26639.herokuapp.com/top<br>
+
+<br>
 Disassamble gif images into frames and play on canvas.<br>
 It is for when use gif image as material for JavaScript games and animation materials.<br>
 BackEnd:JavaServlet<br>
