@@ -11,8 +11,6 @@
     <servlet>
         <servlet-name>top</servlet-name>
         <servlet-class>com.gif.TopServlet</servlet-class>
-       <servlet-name>result</servlet-name>
-        <servlet-class>com.gif.ResultServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>serv</servlet-name>
