@@ -9,11 +9,11 @@
     <display-name>Web Application</display-name>
 
     <servlet>
-        <servlet-name>top</servlet-name>
+        <servlet-name>serv</servlet-name>
         <servlet-class>com.gif.TopServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>top</servlet-name>
-        <url-pattern>/top</url-pattern>
+        <servlet-name>sev</servlet-name>
+        <url-pattern>/serv</url-pattern>
     </servlet-mapping>
 </web-app>
