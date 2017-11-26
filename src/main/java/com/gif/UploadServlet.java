@@ -218,7 +218,7 @@ public class UploadServlet extends BaseServlet {
 						Node attnode = attr.getNamedItem(imageatt[k]);
 						imageAttr.put(imageatt[k], Integer.valueOf(attnode.getNodeValue()));
 					}
-					master = new BufferedImage((int) properties.get("width"), (int) properties.get("height"),
+					master = new BufferedImage(imageAttr.get("imageWidth"), imageAttr.get("imageHeight"),
 							BufferedImage.TYPE_INT_ARGB);
 					master.getGraphics().drawImage(bi, imageAttr.get("imageLeftPosition"),
 							imageAttr.get("imageTopPosition"), null);
