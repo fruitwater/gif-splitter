@@ -10,11 +10,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-//import org.eclipse.jetty.server.Server;
-//import org.eclipse.jetty.servlet.ServletContextHandler;
-//import org.eclipse.jetty.servlet.ServletHolder;
-
-
 @SuppressWarnings("serial")
 @WebServlet("/top")
 public class TopServlet extends BaseServlet{
@@ -31,23 +26,5 @@ public class TopServlet extends BaseServlet{
 		}
 	}
 
-/*       
-        public static void main(String args[]) throws Exception{
-System.out.println("hoge is hoge");
-try{
-	Server server = new Server(Integer.valueOf(System.getenv("PORT")));
-        ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
-        context.setContextPath("/");
-	context.setResourceBase("src/main/webapp");
-        server.setHandler(context);
-        context.addServlet(new ServletHolder(new TopServlet()),"/*");
-        server.start();
-        server.join();
-}catch(Exception e){
-System.out.println("error");
-e.printStackTrace(System.out);
-}        
-	}
-*/
 }
 
